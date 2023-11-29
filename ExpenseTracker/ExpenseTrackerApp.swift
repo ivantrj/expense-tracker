@@ -2,7 +2,7 @@
 //  ExpenseTrackerApp.swift
 //  ExpenseTracker
 //
-//  Created by ivan ruwido  on 29.11.23.
+//  Created by ivan trj  on 29.11.23.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct ExpenseTrackerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }
