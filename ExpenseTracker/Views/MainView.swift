@@ -21,6 +21,12 @@ struct MainView: View {
                     Image(systemName: "plus")
                     Text("Add expense")
                 }
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
     }
 }

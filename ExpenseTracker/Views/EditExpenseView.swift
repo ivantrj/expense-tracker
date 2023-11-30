@@ -25,13 +25,15 @@ struct EditExpenseView: View {
         _selectedCategory = State(initialValue: expense.type)
     }
     
+    @AppStorage("darkMode") var isDarkMode = false
+    
     var body: some View {
         VStack {
             GroupBox {
                 TextField("Name of Expense", text: $name)
                     .padding()
                     .foregroundStyle(.secondary)
-                    .background(.white)
+                    .background(isDarkMode ? .black : .white)
                     .cornerRadius(10)
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .padding(.top)
@@ -39,7 +41,7 @@ struct EditExpenseView: View {
                 TextField("Amount", text: $amount)
                     .padding()
                     .foregroundStyle(.secondary)
-                    .background(.white)
+                    .background(isDarkMode ? .black : .white)
                     .cornerRadius(10)
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                     .padding(.top)
@@ -110,6 +112,7 @@ struct EditExpenseView: View {
                 }
                 .padding()
             }
+            .preferredColorScheme(isDarkMode ? .dark : .light)
             
             Spacer()
         }

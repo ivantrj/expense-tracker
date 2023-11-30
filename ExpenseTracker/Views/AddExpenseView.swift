@@ -18,20 +18,22 @@ struct AddExpenseView: View {
     
     let categories = ["Food", "Housing", "Transport", "Entertainment", "Utilities"]
     
+    @AppStorage("darkMode") var isDarkMode = false
+    
     var body: some View {
         NavigationStack {
             VStack(spacing: 20) {
                 TextField("Name of Expense", text: $name)
                     .padding()
                     .foregroundStyle(.secondary)
-                    .background(.white)
+                    .background(isDarkMode ? .black : .white)
                     .cornerRadius(10)
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                 
                 TextField("Amount", text: $amount)
                     .padding()
                     .foregroundStyle(.secondary)
-                    .background(.white)
+                    .background(isDarkMode ? .black : .white)
                     .cornerRadius(10)
                     .shadow(color: .gray, radius: 2, x: 0, y: 2)
                 
@@ -118,6 +120,7 @@ struct AddExpenseView: View {
                     Text("OK")
                 }
             }
+            .preferredColorScheme(isDarkMode ? .dark : .light)
         }
     }
 }
