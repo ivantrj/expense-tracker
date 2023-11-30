@@ -52,7 +52,7 @@ struct AddExpenseView: View {
                                 .cornerRadius(10)
                                 .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         }
-}
+                    }
                 }
                 
                 LazyVGrid(columns: [
@@ -71,7 +71,7 @@ struct AddExpenseView: View {
                                 .cornerRadius(10)
                                 .shadow(color: .gray, radius: 2, x: 0, y: 2)
                         }
-}
+                    }
                 }
                 
                 Button {
@@ -104,7 +104,7 @@ struct AddExpenseView: View {
                 .padding()
                 
                 Spacer()
-
+                
             }
             .padding(.horizontal)
             .navigationTitle("Add Expense")
