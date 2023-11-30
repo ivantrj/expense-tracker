@@ -17,6 +17,7 @@
 		2CB70FEE2B172DD900BBCEF1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB70FED2B172DD900BBCEF1 /* SettingsView.swift */; };
 		2CB70FF12B1737DA00BBCEF1 /* ExpenseTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2CB70FEF2B1737DA00BBCEF1 /* ExpenseTracker.xcdatamodeld */; };
 		2CB70FF32B17389100BBCEF1 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB70FF22B17389100BBCEF1 /* DataController.swift */; };
+		2CB70FF52B188EE500BBCEF1 /* ExpenseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB70FF42B188EE500BBCEF1 /* ExpenseDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2CB70FED2B172DD900BBCEF1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2CB70FF02B1737DA00BBCEF1 /* ExpenseTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpenseTracker.xcdatamodel; sourceTree = "<group>"; };
 		2CB70FF22B17389100BBCEF1 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		2CB70FF42B188EE500BBCEF1 /* ExpenseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		2CB70FE52B172D5D00BBCEF1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				2CB70FF42B188EE500BBCEF1 /* ExpenseDetail.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -185,6 +188,7 @@
 				2CB70FF12B1737DA00BBCEF1 /* ExpenseTracker.xcdatamodeld in Sources */,
 				2CB70FEE2B172DD900BBCEF1 /* SettingsView.swift in Sources */,
 				2CB70FF32B17389100BBCEF1 /* DataController.swift in Sources */,
+				2CB70FF52B188EE500BBCEF1 /* ExpenseDetail.swift in Sources */,
 				2CB70FE82B172DAF00BBCEF1 /* ExpenseView.swift in Sources */,
 				2CB70FEA2B172DBE00BBCEF1 /* AddExpenseView.swift in Sources */,
 			);
